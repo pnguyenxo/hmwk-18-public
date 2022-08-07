@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,7 +15,7 @@ body{
 }
 nav{
     padding-top: 20px;
-    display: inline-block;
+    display: flex;
     float: right;
     margin-bottom: 30px;
 }
@@ -40,7 +45,7 @@ nav a {
 .clear-floats { clear: both; }
 h1 {
     font-size: 6em;
-    color: #FFFFFF;
+    color: #000000;
   }
 h2 {
     font-size: 4em;
@@ -74,13 +79,18 @@ h2 {
     margin-bottom: 20px;
   }
   .home-1-heading {
-    width: 60vw;
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     z-index: 1;
+    align-items: center;
   }
   .project1{
     display: flex;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center
 
   }
   .image div{
@@ -89,6 +99,14 @@ h2 {
     padding: 5px;
     height: 500px;
     margin-bottom: 20px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.margin-left{
+  margin-left: 40px;
 }
   .contact-1{
     height: 500px;
@@ -111,13 +129,15 @@ h2 {
     width: 100%;
     background-color: rgb(102, 37, 99);
     font-family: sans-serif;
-    display: inline-block;
+    margin-top: 40px;
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     align-content: center;
   }
   footer ul{
+    width: 50%;
     background-color: #AD6DAA;
     display: flex;
     justify-content: space-around;
@@ -142,4 +162,46 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .smallimg{
+    width: 20px;
+    height: 20px;
+  }
+  @media only screen and (max-width: 500px){
+   nav {
+    display: hidden;
+   }
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    body {
+      background-color: #FFFFFF;
+    }
+    .project1 {
+      display: flex;
+      flex-direction: column;
+    #categoryGrid {
+      margin: 0px 5%;
+      display: grid;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "project 1"
+      "healing arc"
+      ;
+    #categoryGrid {
+      grid-template-rows: 300px 300px 300px
+      300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "project 1"
+      "healing arc"
+    }
+    }
   }
