@@ -8,6 +8,7 @@ body{
 }
 .logo{
     float: left;
+    margin: 10px;
 }
 .logo img {
     width: 45px;
@@ -34,6 +35,18 @@ a{
 header{
     width: 100%;
 }
+.flex-container {
+  display: flex;
+  background-color: None;
+}
+
+.flex-container div {
+  background-color: None;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
 nav ul {list-style: none; padding: 0 ;
 }
 nav ul li {display: inline; padding: 10px;
@@ -44,20 +57,20 @@ nav a {
 }
 .clear-floats { clear: both; }
 h1 {
-    font-size: 6em;
-    color: #000000;
-  }
-h2 {
-    font-size: 4em;
+    font-size: 5em;
     color: #FFFFFF;
   }
-  h3 {
+h2 {
     font-size: 3em;
-    color: #AD6DAA;
+    color: #662563;
+  }
+  h3 {
+    font-size: 2em;
+    color: #662563;
   }
   h4{
     font-size: 1em;
-    color: black;
+    color: #662563;
     font-weight: bold;
   }
   h5{
@@ -66,7 +79,7 @@ h2 {
     font-weight: lighter;
   }
   .home-1 {
-    height: 500px;
+    height: 200px;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,10 +89,13 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   .home-1-heading {
-    background-color: blue;
+    background-color: #AD6DAA;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -121,11 +137,11 @@ h2 {
     display: inline-block;
   }
   .contact-image{
-    background-image: url("../Images/Contact.jpg");
+    background-image: url("");
     display: inline-block;
   }
   footer{
-    height: 200px;
+    height: 100px;
     width: 100%;
     background-color: rgb(102, 37, 99);
     font-family: sans-serif;
@@ -137,19 +153,10 @@ h2 {
     align-content: center;
   }
   footer ul{
-    width: 50%;
+    width: 80%;
     background-color: #AD6DAA;
     display: flex;
     justify-content: space-around;
-  }
-  .overlay{
-    background-color: rgba(102, 37, 99, .90);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left:0;
-    right:0;
-    z-index: 0;
   }
   .project1{
     background-image: url("");
@@ -164,10 +171,37 @@ h2 {
     background-position: center;
   }
   .smallimg{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
-  @media only screen and (max-width: 500px){
+  button2{
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  .button:hover{
+    background-color: #fff;
+    border: 1px solid #AD6DAA;
+    color: #662563;
+  }
+  .button:active {
+    background-color: #662563;
+    box-shadow: 0 5px #666;
+    transform: translateY (4px);
+    color: #fff;
+    opacity: 100;
+  }
+  #categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "project 1"
+    "healing arc"
+    ;
+  }
+  @media only screen and (max-width: 500px) {
    nav {
     display: hidden;
    }
@@ -186,15 +220,8 @@ h2 {
     .project1 {
       display: flex;
       flex-direction: column;
-    #categoryGrid {
-      margin: 0px 5%;
-      display: grid;
-      grid-template-rows: 300px 300px 300px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-      "project 1"
-      "healing arc"
-      ;
+    }
+    
     #categoryGrid {
       grid-template-rows: 300px 300px 300px
       300px 300px;
@@ -204,4 +231,3 @@ h2 {
       "healing arc"
     }
     }
-  }
