@@ -28,6 +28,18 @@ button{
     color: white;
     background-color: #AD6DAA;
 }
+.button:hover{
+  background-color: #AD6DAA;
+  border: 1px solid #FFFFFF;
+  color: #AD6DAA;
+}
+.button:active {
+  background-color: #662563;
+  box-shadow: 0 5px #666;
+  transform: translateY (4px);
+  color: #662563;
+  opacity: 100;
+}
 a{
   text-decoration: none;
   color: white;
@@ -75,7 +87,7 @@ h2 {
   }
   h5{
     font-size: 1em;
-    color: black;
+    color: #000000;
     font-weight: lighter;
   }
   .home-1 {
@@ -173,23 +185,6 @@ h2 {
   .smallimg{
     width: 40px;
     height: 40px;
-  }
-  button2{
-    float: right;
-    margin-right: 50px;
-    margin-bottom: 50px;
-  }
-  .button:hover{
-    background-color: #fff;
-    border: 1px solid #AD6DAA;
-    color: #662563;
-  }
-  .button:active {
-    background-color: #662563;
-    box-shadow: 0 5px #666;
-    transform: translateY (4px);
-    color: #fff;
-    opacity: 100;
   }
   #categoryGrid {
     margin: 0px 5%;
